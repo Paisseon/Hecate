@@ -1,2 +1,2 @@
 # LunarTime
-A subtly witchy tweak for iOS 13-14
+Adds an emoji for the current lunar phase to the time label in status bar and in the BigSurCenter time view
