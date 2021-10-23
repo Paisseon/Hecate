@@ -1,0 +1,9 @@
+Package: emt.paisseon.lunartime
+Name: LunarTime
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Happy Halloween for Maria
+Maintainer: Paisseon
+Author: Paisseon
+Section: Tweaks
+Depends: mobilesubstrate
