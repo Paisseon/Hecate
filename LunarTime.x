@@ -35,7 +35,8 @@ static NSString* getLunarPhase() {
 %hook _UIStatusBarStringView
 - (void) setText: (NSString*) arg0 {
 	bool labelIsDate = ([[arg0 substringFromIndex:[arg0 length] -1] isEqualToString:@"."]); // check if the string ends with a dot
-	if (!labelIsDate) arg0 = [NSString stringWithFormat:@"%@ %@", arg0, getLunarPhase()]; // show original time with phase at the end, e.g. "04.20 🌖"
+	// what this does is to check for the time so we don't mess with the carrier and other things.
+	if (!labelIsDate && ([arg0 containsString:@":"] || [arg0 containsString:@"."])) arg0 = [NSString stringWithFormat:@"%@ %@", arg0, getLunarPhase()]; // show original time with phase at the end, e.g. "04.20 🌖"
 	%orig;
 }
 %end
