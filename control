@@ -1,8 +1,8 @@
 Package: emt.paisseon.lunartime
 Name: LunarTime
-Version: 1.0.1
+Version: 1.1
 Architecture: iphoneos-arm
-Description: Happy Halloween for Maria
+Description: Show lunar phase in the status bar
 Maintainer: Paisseon
 Author: Paisseon
 Section: Tweaks
