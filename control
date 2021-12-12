@@ -1,9 +1,9 @@
 Package: emt.paisseon.lunartime
 Name: LunarTime
-Version: 1.1
+Version: 1.2
 Architecture: iphoneos-arm
-Description: Show lunar phase in the status bar
+Description: Lunar phase in your status bar
 Maintainer: Paisseon
 Author: Paisseon
 Section: Tweaks
-Depends: mobilesubstrate
+Depends: ${ORION}, firmware (>= 12.2)
